@@ -8,7 +8,7 @@ var things = {
 function set_(e){
   this.query = e.parameter.query;
   this.ledgerId = e.parameter.ledgerId;
-  this.confirm = e.parameter.confirm;
+  this.confirm = e.parameter.confirm || this.confirm;
   return this;
 }
 function InvertByCurrentFilter_() {
