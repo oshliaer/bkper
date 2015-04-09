@@ -1,19 +1,25 @@
 var things = {
   query: '',
-  ledgerId: '',
+  bookId: '',
   confirm: 'Request has been sent!',
   set: set_,
   InvertByCurrentFilter: InvertByCurrentFilter_
 }
+
+//private
+//sets parameters from e of doGet(e)
 function set_(e){
   this.query = e.parameter.query;
-  this.ledgerId = e.parameter.ledgerId;
+  this.bookId = e.parameter.bookId;
   this.confirm = e.parameter.confirm || this.confirm;
   return this;
 }
+
+//private
+//Inverts By Current Filter
 function InvertByCurrentFilter_() {
   var self = this;
-  var book = BkperApp.openById(self.ledgerId);
+  var book = BkperApp.openById(self.bookId);
   var transactionIterator = book.search(self.query);
   var new_transactions = [];
   while (transactionIterator.hasNext()) {

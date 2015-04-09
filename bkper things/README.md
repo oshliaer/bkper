@@ -10,7 +10,7 @@ There are simple scripts for [Google Apps Script](https://developers.google.com/
 ##Outgoing WebHooks settings
 ###Context menu on screen:
 
-`[YOUR_MENU_ITEM]@[YOUR_SCRIPT_URL]?query={query}&ledgerId={ledgerId}&confirm=[YOUR_CUSTOM_CONFIRMATION_MESSAGE]&action=[ACTION_NAME]`
+`[YOUR_MENU_ITEM]@[YOUR_SCRIPT_URL]?query={query}&bookId={bookId}&confirm=[YOUR_CUSTOM_CONFIRMATION_MESSAGE]&action=[ACTION_NAME]`
 
 ##The ACTIONS
 ### InvertByCurrentFilter
